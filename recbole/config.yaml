@@ -1,0 +1,13 @@
+gpu_id: '0,1'
+field_separator: ","
+USER_ID_FIELD: "author_id"
+ITEM_ID_FIELD: "cit"
+TIME_FIELD : "year"
+load_col:
+    inter: ['author_id', 'cit','year']
+    item: ['cit', 'title','name']
+epochs: 80
+learning_rate : 0.01
+eval_batch_size : 2048
+train_batch_size: 2048
+iid_field: "cit"
